@@ -1,0 +1,18 @@
+<h1>Produtos</h1>
+<ul>
+    {% for p in produto %}
+        <li>
+            nome : {{p.nome}}
+            
+        </li>
+        <li>
+            preco : {{p.preco}}
+        </li>
+        <li>
+            estoque : {{p.estoque}}
+        </li>
+        <li>
+            <img src={{p.url_imagem}} height="500" width="500">
+        </li>
+    {% endfor %}
+</ul>
